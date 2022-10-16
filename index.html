@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trybewarts</title>
+    <link rel="stylesheet" href="./libs/semantic.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo trybewarts">
+        <h1 id="trybewarts-header-title">Trybewarts</h1>
+        <form class="trybewarts-login ui form" action="">
+            <div class="size-box">
+                <input id="email" type="email" name="email" placeholder="Email">
+            </div>
+            <div class="size-box">
+                <input id="senha" type="password" name="password" placeholder="Senha">
+            </div>
+            <button class="ui button" id="loginButton">Entrar</button>
+        </form>
+    </header>
+    <main id="hero">
+        <form class="ui form form-layout" action="" id="evaluation-form" method="get">
+            <div class="field">
+                <div class="size-text">
+                    <input type="text" id="input-name" placeholder="Nome">
+                </div>
+                <div class="size-text">
+                    <input type="text" id="input-lastname" placeholder="Sobrenome">
+                </div>
+            </div>
+            <div class="field">
+                <div class="size-text">
+                    <input type="text" id="input-email" placeholder="Email">
+                </div>
+                <div class="size-text">
+                    <select class="ui dropdown" name="" id="house">
+                        <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                        <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                        <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                        <option id="pytherina-house" value="Pytherina">Pytherina</option>
+                    </select>
+                </div>
+            </div>
+            <hr/>
+            <section class="class-subject">
+                <div class="grouped fields family-content house-select">
+                    <label id="label-family">Qual sua família?</label>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input id="input-frontend" type="radio" name="family" value="Frontend">
+                            <label for="input-frontend">Frontend</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input id="input-backend" type="radio" name="family" value="Backend">
+                            <label for="input-backend">Backend</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input id="input-fullstack" type="radio" name="family" value="FullStack">
+                            <label for="input-fullstack">Fullstack</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="checkbox-subject">
+                    <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+                    <div class ="checkbox-content">
+                        <div class="ui checked checkbox">
+                            <input class="subject" value="HoFs" type="checkbox">
+                            <label>HoFs</label>
+                        </div>
+                        <div class="ui checked checkbox">
+                            <input class="subject" value="Jest" type="checkbox">
+                            <label>Jest</label>
+                        </div>
+
+                        <div class="ui checked checkbox">
+                            <input class="subject" value="Promises" type="checkbox">
+                            <label>Promises</label>
+                        </div>
+
+                        <div class="ui checked checkbox">
+                            <input class="subject" value="React" type="checkbox">
+                            <label>React</label>
+                        </div>
+
+                        <div class="ui checked checkbox">
+                            <input class="subject" value="SQL" type="checkbox">
+                            <label>SQL</label>
+                        </div>
+
+                        <div class="ui checked checkbox">
+                            <input class="subject" value="Python" type="checkbox">
+                            <label>Python</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr/>
+            <div class="class-rate">
+                <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
+                <div class="checkbox-rate"></div>
+            </div>
+            <hr/>
+            <div class="field textBox">
+                <label class="textarea">Deixe seu comentário:</label>
+                <textarea id="textarea" maxlength="500"></textarea>
+                <span id="counter">500</span>
+            </div>   
+            <hr/>
+            <div class="ui checked checkbox infos">
+                <input id="agreement" value="HoFs" type="checkbox">
+                <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
+            </div>       
+            <button id="submit-btn" type="submit" class="ui primary button">Enviar</button>
+        </form>
+        <div id="form-data"></div>
+        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
+    </main>
+    <footer id="footer">
+        <p>Direitos reservados à Trybewarts©</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Trybewarts2, Arial, Helvetica, sans-serif;
+}
+
+body {
+ background-image: url('./images/background.jpeg');
+ background-size: cover;
+}
+
+@font-face {
+  font-family: Trybewarts;
+  src: url('./libs/MagicSchool.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Trybewarts2;
+  src: url('./libs/WizardWorld.ttf') format('truetype');
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145, 0.5);
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form-layout {
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.size-text {
+  display: flex;
+  width: 40%;
+}
+
+.size-box {
+  width: 33%;
+}
+
+.trybewarts-header-logo {
+  height: 49px;
+}
+
+.trybewarts-login {
+  display: flex;
+  justify-content: space-around;
+}
+
+.class-rate {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textBox {
+  position: relative;
+  padding: 15px;
+}
+
+#evaluation-form {
+  display: flex;
+  padding: 15px;
+  width: 675px;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 85%;
+}
+
+#counter {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+}
+
+#textarea {
+  resize: none;
+}
+
+#trybewarts-header-title {
+  font-family: Trybewarts, Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 200;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(50, 167, 145, 0.5);
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#footer p {
+  font-size: 32px;
+  font-family: Trybewarts, Arial, Helvetica, sans-serif;
+}
+
+#form-data {
+  display: none;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 30px;
+  height: 40%;
+  width: 20%;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.family-content {
+  display: flex;
+  justify-content: center;
+}
+
+.house-select {
+  width: 40%;
+}
+
+#checkbox-subject {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.class-subject {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+.checkbox {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.checkbox-content {
+  display: flex;
+  margin-top: 10px;
+  height: 60px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.checkbox-rate {
+  display: flex;
+  padding: 10px;
+}
+
+#label-rate {
+  border: 1px solid, red;
+  size: 1030px;
+}
+
+#label-infos {
+  margin-top: 10px;
+}
+
+#submit-btn {
+  margin-top: 15px;
+  width: 30%;
+  align-self: center;
+}
